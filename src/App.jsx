@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -5,6 +6,16 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+=======
+import { useState } from "react";
+import { QrCode } from "./components/index";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+>>>>>>> 97c08b2 (git init, first test - create a QR code that regererates based on a uID)
 
   return (
     <>
@@ -17,6 +28,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+<<<<<<< HEAD
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -33,3 +45,11 @@ function App() {
 }
 
 export default App
+=======
+      <QrCode viteLogo={viteLogo}></QrCode>
+    </>
+  );
+}
+
+export default App;
+>>>>>>> 97c08b2 (git init, first test - create a QR code that regererates based on a uID)
