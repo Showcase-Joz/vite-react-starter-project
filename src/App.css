@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+h3 {
+  display: inline;
+  margin-inline: 1rem;
+}
