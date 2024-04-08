@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "onlounge-test1",
-=======
-  "name": "onlounger-test1",
->>>>>>> 97c08b2 (git init, first test - create a QR code that regererates based on a uID)
+  "name": "bare-bones",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,19 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "qrcode.react": "^3.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-=======
-    "prop-types": "^15.8.1",
-    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
-    "styled-components": "^5.3.11",
-    "uuid": "^9.0.0"
->>>>>>> 97c08b2 (git init, first test - create a QR code that regererates based on a uID)
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
