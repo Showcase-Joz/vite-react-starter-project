@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { GlobalStyle } from "./styles/globalStyle";
 import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import viteLogo from "./assets/vite.svg";
+import prettierLogo from "./assets/prettier.svg";
+import esLintLogo from "./assets/eSLint.svg";
+import pnpmLogo from "./assets/pnpmlogo.svg";
+import styledLogo from "./assets/styled-components-logo.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +18,7 @@ function App() {
   };
   return (
     <>
+      <GlobalStyle />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -23,9 +28,18 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <button onClick={handleClickUp}>+</button>
-      <h3>{count}</h3>
-      <button onClick={handleClickDown}>-</button>
+      <div className="card">
+        <button onClick={handleClickUp}>+</button>
+        <h3>{count}</h3>
+        <button onClick={handleClickDown}>-</button>
+      </div>
+      <div className="card additional">
+        <h4>Including:</h4>
+        <img src={prettierLogo} alt="prettier" title="prettier" />
+        <img src={esLintLogo} alt="esLing" title="eslint" />
+        <img src={pnpmLogo} alt="pnpm" title="pnpm" />
+        <img src={styledLogo} alt="styledComponents" title="styledComponents" />
+      </div>
     </>
   );
 }

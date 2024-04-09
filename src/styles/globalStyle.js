@@ -1,4 +1,11 @@
-#root {
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
+
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+  
+  
+  #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -34,7 +41,14 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2em; 
+}
+.card.additional h4 {
+  margin-bottom: .5rem;
+}
+.additional img {
+    max-width: 1.7rem;
+    margin-right: .5rem;
 }
 
 .read-the-docs {
@@ -45,3 +59,6 @@ h3 {
   display: inline;
   margin-inline: 1rem;
 }
+`;
+
+export { GlobalStyle };
