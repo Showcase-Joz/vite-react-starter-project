@@ -1,5 +1,6 @@
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { reactClickToComponent } from "vite-plugin-react-click-to-component";
+import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
@@ -8,6 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     reactClickToComponent(),
+    VitePWA({
+      registerType: "autoUpdate",
+      devOptions: {
+        enabled: true,
+      },
+    }),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
       exclude: undefined,

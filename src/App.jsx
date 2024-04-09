@@ -6,6 +6,7 @@ import prettierLogo from "./assets/prettier.svg";
 import esLintLogo from "./assets/eSLint.svg";
 import pnpmLogo from "./assets/pnpmlogo.svg";
 import styledLogo from "./assets/styled-components-logo.png";
+import pwaLogo from "./assets/vite-pwalogo.svg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,7 @@ function App() {
         <img src={esLintLogo} alt="esLing" title="eslint" />
         <img src={pnpmLogo} alt="pnpm" title="pnpm" />
         <img src={styledLogo} alt="styledComponents" title="styledComponents" />
+        <img src={pwaLogo} alt="vitePwa" title="vite PWA" />
       </div>
     </>
   );
